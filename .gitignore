@@ -1,3 +1,33 @@
+### Basic ###
+# Apples Build
+*.build
+*.apples
+
+# Initialized files
+*.exe
+*.ini
+*.basic
+
+### SVN ###
+.svn/
+
+### TortoiseGit ###
+# Project-level settings
+/.tgitconfig
+
+### Adobe ###
+# Adobe Source Files
+*.psd
+*.ai
+*.indd
+*.prproj
+*.aep
+
+### Node Modules ### 
+/node_modules
+/node-json-generate
+package-lock.json
+
 # Build and Release Folders
 bin/
 bin-debug/
@@ -5,15 +35,8 @@ bin-release/
 [Oo]bj/ # FlashDevelop obj
 [Bb]in/ # FlashDevelop bin
 
-# Other files and folders
-.settings/
-
 # Executables
 *.swf
 *.air
 *.ipa
 *.apk
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
