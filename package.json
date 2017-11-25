@@ -1,0 +1,27 @@
+{
+  "name": "tower-firebase",
+  "version": "1.0.0",
+  "description": "Software de gerenciamento para estacionamento.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunomacedo/tower-firebase.git"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "estacionamento",
+    "admin",
+    "firebase",
+    "npm"
+  ],
+  "author": "Bruno Macedo <contato@brunomacedo.com.br> (https://brunomacedo.com.br/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brunomacedo/tower-firebase/issues"
+  },
+  "homepage": "https://github.com/brunomacedo/tower-firebase#readme"
+}
