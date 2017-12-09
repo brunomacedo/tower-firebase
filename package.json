@@ -1,9 +1,11 @@
 {
   "name": "tower-firebase",
   "version": "1.0.0",
-  "description" : "Software management for parking vehicles",
+  "description": "Software management for parking vehicles",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint source/*.js",
+    "prepush": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +25,13 @@
   "bugs": {
     "url": "https://github.com/brunomacedo/tower-firebase/issues"
   },
-  "homepage": "https://github.com/brunomacedo/tower-firebase#readme"
+  "homepage": "https://github.com/brunomacedo/tower-firebase#readme",
+  "devDependencies": {
+    "eslint": "^4.13.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.1",
+    "husky": "^0.14.3"
+  }
 }
