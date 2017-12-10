@@ -53,9 +53,9 @@ const obj = {
 };
 
 const { name: newName = 'Non-name', surname: newSurname = 'Non-surname' } = obj;
-const runDestructin = () => newName + newSurname;
-runDestructin();
-// console.log(runDestructin());
+const runDestructing = () => newName + newSurname;
+runDestructing();
+// console.log(runDestructing());
 
 /**
  * DESTRUCTING SWAP
@@ -65,3 +65,29 @@ let letterA = 10;
 let letterB = 5;
 [letterA, letterB] = [letterB, letterA];
 // console.log(`A: ${letterA.toFixed(2)} => B: ${letterB.toFixed(2)}`);
+
+/**
+ * SPREAD OPERATOR
+ * Add elements into array without push function.
+ */
+const front = ['angular', 'vue', 'react'];
+const back = ['node', 'python', 'php'];
+const fullstack = [...front, 'rxjs', ...back];
+// const fullstack = [].concat(front, ['rxjs'], back);
+const runSpreadAdd = () => fullstack;
+runSpreadAdd();
+// console.log(runSpreadAdd());
+
+/**
+ * SPREAD OPERATOR
+ * Using spread operator with parameters in functions.
+ */
+const spreadFunc = {
+  init(bread, cheese, salad) {
+    return `Your sandwich recipe contains ${bread} and ${cheese} and ${salad}.`;
+  },
+};
+const recipe = ['Australian bread', 'cheddar', 'lettuce and tomato'];
+const getRecipe = () => spreadFunc.init(...recipe);
+getRecipe();
+// console.log(getRecipe());
