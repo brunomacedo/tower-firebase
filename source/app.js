@@ -29,7 +29,7 @@ Bm.init({
 });
 
 /**
- * SHOTHAND PROPERTIES
+ * SHORTHAND PROPERTIES
  * Ex. 2 Objects.
  */
 const brand = 'BMW';
