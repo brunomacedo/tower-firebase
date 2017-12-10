@@ -55,7 +55,7 @@ const obj = {
 const { name: newName = 'Non-name', surname: newSurname = 'Non-surname' } = obj;
 const runDestructin = () => newName + newSurname;
 runDestructin();
-//console.log(runDestructin());
+// console.log(runDestructin());
 
 /**
  * DESTRUCTING SWAP
