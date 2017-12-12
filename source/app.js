@@ -91,3 +91,32 @@ const recipe = ['Australian bread', 'cheddar', 'lettuce and tomato'];
 const getRecipe = () => spreadFunc.init(...recipe);
 getRecipe();
 // console.log(getRecipe());
+
+/**
+ * REST PARAMS
+ * It works like spread operator.
+ */
+const multiply = (mult, ...args) => args.map(items => items * mult);
+multiply();
+// console.log(multiply(3, 5, 6, 8));
+
+/**
+ * PROMISES
+ */
+const defer = new Promise((resolve) => {
+  const isTrue = true;
+  setTimeout(() => {
+    if (isTrue) {
+      resolve('Hello, it works!');
+    }
+    /**
+      else {
+        reject('Error!');
+      }
+     */
+  }, 2000);
+});
+
+defer
+  .then(data => data);
+// .catch(err => console.log(err));
