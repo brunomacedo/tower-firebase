@@ -164,3 +164,21 @@ cat.hello();
   console.log(cat.hello());
   console.log(dog.hello());
  */
+
+/**
+ * CLASS EXTENDED
+ */
+class Elephant extends Animal {
+  constructor(kind, sound) {
+    super(kind);
+    this.sound = sound;
+  }
+
+  bark() {
+    return `${this.sound}! I'm ${this.kind}!`;
+  }
+}
+
+const elephant = new Elephant('Dumbo', 'Pawoo. Pawoo. Pawoo!');
+elephant.bark();
+// console.log(elephant.bark());
