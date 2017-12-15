@@ -120,3 +120,47 @@ const defer = new Promise((resolve) => {
 defer
   .then(data => data);
 // .catch(err => console.log(err));
+
+/**
+ * PROTOTYPE
+ * CLASS AND CONSTRUCTOR [ES6]
+ */
+class Animal {
+  constructor(kind, sound) {
+    this.kind = kind;
+    this.sound = sound;
+  }
+
+  hello() {
+    return `${this.sound} I'm a ${this.kind}`;
+  }
+}
+
+const dog = new Animal('dog', 'auau');
+const cat = new Animal('cat', 'meaw');
+dog.hello();
+cat.hello();
+// console.log(cat.hello());
+// console.log(dog.hello());
+
+/**
+ * THE SAME THING WITH [ES5]
+ * PROTOTYPE CLASS
+  var Animal = function () {
+    function Animal(kind, sound) {
+      this.kind = kind;
+      this.sound = sound;
+    }
+
+    Animal.prototype.hello = function hello() {
+      return this.sound + ' I\'m a ' + this.kind;
+    };
+
+    return Animal;
+  }();
+
+  var dog = new Animal('dog', 'auau');
+  var cat = new Animal('cat', 'meaw');
+  console.log(cat.hello());
+  console.log(dog.hello());
+ */
