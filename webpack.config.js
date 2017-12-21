@@ -27,6 +27,9 @@ const config = {
       },
     ],
   },
+  /**
+   * How to get UglifyPlugin usage.
+   */
   plugins: [
     new UglifyJSPlugin({
       uglifyOptions: {
