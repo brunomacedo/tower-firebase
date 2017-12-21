@@ -1,4 +1,5 @@
 const sum = (a, b) => a + b;
+const sub = (a, b) => a - b;
 
 /**
  * Define o método principal
@@ -6,4 +7,4 @@ const sum = (a, b) => a + b;
  * Pode importar com qualquer nome
  * Não precisa utilizar as chaves
  */
-export default sum;
+export { sum, sub };

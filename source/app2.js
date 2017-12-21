@@ -1,3 +1,4 @@
-import sum from './utils';
+import { sum as add, sub as subtr } from './utils';
 
-console.log(sum(3, 2));
+console.log(add(5, 2));
+console.log(subtr(5, 2));
