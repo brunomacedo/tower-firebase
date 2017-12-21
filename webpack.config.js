@@ -1,5 +1,5 @@
 /**
- * Webpack solved error with uglifyjs pluging.
+ * Webpack solve error with uglifyjs pluging.
  * Install: `$npm i -D uglifyjs-webpack-plugin`
  */
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
