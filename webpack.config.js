@@ -1,4 +1,8 @@
-const webpack = require('webpack');
+/**
+ * Webpack solved error with uglifyjs pluging.
+ * Install: `$npm i -D uglifyjs-webpack-plugin`
+ */
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const config = {
   devtool: 'source-map',
@@ -24,10 +28,12 @@ const config = {
     ],
   },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      compress: { warnings: false },
-      output: { comments: false },
-      sourceMap: true,
+    new UglifyJSPlugin({
+      uglifyOptions: {
+        compress: { warnings: false },
+        output: { comments: false },
+        sourceMap: true,
+      },
     }),
   ],
 };
