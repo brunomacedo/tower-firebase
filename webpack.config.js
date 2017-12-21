@@ -3,6 +3,7 @@
  * Install: `$npm i -D uglifyjs-webpack-plugin`
  */
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+// const webpack = require('webpack');
 
 const config = {
   devtool: 'source-map',
@@ -35,8 +36,8 @@ const config = {
       uglifyOptions: {
         compress: { warnings: false },
         output: { comments: false },
-        sourceMap: true,
       },
+      sourceMap: true,
     }),
   ],
 };
