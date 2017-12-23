@@ -8,7 +8,7 @@
     "watch": "npm run build -- --watch",
     "lint": "./node_modules/.bin/eslint source/*.js",
     "prepush": "npm run lint",
-    "test": "./node_modules/.bin/mocha specs/**/*.spec.js",
+    "test": "./node_modules/.bin/mocha specs/**/*.spec.js || ECHO.",
     "server": "./node_modules/.bin/webpack-dev-server --inline"
   },
   "repository": {
