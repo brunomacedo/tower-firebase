@@ -8,10 +8,10 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const config = {
   devtool: 'source-map',
   entry: {
-    filename: './source/app2.js',
+    filename: './source/app.js',
   },
   output: {
-    filename: './public/build.js',
+    filename: './build/app.js',
   },
   module: {
     loaders: [
@@ -28,9 +28,6 @@ const config = {
       },
     ],
   },
-  /**
-   * How to get UglifyPlugin usage.
-   */
   plugins: [
     new UglifyJSPlugin({
       uglifyOptions: {
