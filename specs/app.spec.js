@@ -1,15 +1,32 @@
-// import { expect } from 'chai';
-const expect = require('chai').expect;
+import { expect } from 'chai';
+import { sum, sub, mult, div } from '../source/app';
 
-describe('App', () => {
-  describe('Method A', () => {
-    context('Case 1', () => {
-      it('Should have a size of 4 when push another value to the array.', () => {
-        const arr = [1, 2, 3];
-        arr.push(4);
-        // console.log(arr.length);
-        expect(arr).to.have.lengthOf(3);
-      });
+describe('Calc', () => {
+  context('Smoke tests', () => {
+    it('Should exist the method `sum`', () => {
+      expect(sum).to.exist;
+      expect(sum).to.be.a('function');
+    });
+
+    it('Should exist the method `sub`', () => {
+      expect(sub).to.exist;
+      expect(sub).to.be.a('function');
+    });
+
+    it('Should exist the method `mult`', () => {
+      expect(mult).to.exist;
+      expect(mult).to.be.a('function');
+    });
+
+    it('Should exist the method `div`', () => {
+      expect(div).to.exist;
+      expect(div).to.be.a('function');
+    });
+  });
+
+  context('Sum', () => {
+    it('Should be equal 5 when sum: 2 + 3', () => {
+      expect(sum(2, 3)).to.be.equal(5);
     });
   });
 });
