@@ -8,6 +8,10 @@
 *.ini
 *.basic
 
+# Specs
+/.nyc_output
+/coverage
+
 ### SVN ###
 .svn/
 
