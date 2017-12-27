@@ -1,12 +1,20 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "build",
     "ignore": [
-      "firebase.json",
-      "package.json",
-      ".gitignore",
       "**/.*",
-      "**/node_modules/**"
+      "package.json",
+      "firebase.json",
+      ".gitignore",
+      "**.config.js",
+      "**.md",
+      "**/.learning/**",
+      "**/.nyc_output/**",
+      "**/coverage/**",
+      "**/node_modules/**",
+      "**/source/**",
+      "**/specs/**",
+      "**/templates/**"
     ]
   }
 }
